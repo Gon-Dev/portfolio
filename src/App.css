@@ -1,0 +1,18 @@
+:root {
+  --cod-gray: #1E1E1E;
+  --mystic-white: #E1E8EB;
+  --studio-purple: #7952B3;
+  --amber: #FFC107;
+}
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
