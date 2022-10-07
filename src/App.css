@@ -1,9 +1,10 @@
 :root {
   --cod-gray: #1E1E1E;
-  --mystic-white: #E1E8EB;
-  --studio-purple: #7952B3;
-  --amber: #FFC107;
-}
+  --mystic-white: rgba(225,232,235,1);
+  --deep-purple: #7952B3;
+  --yellow-submarine: #FFC107;
+  --font-stroke: 0.25px var(--mystic-white);
+} 
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,8 @@
 }
 body {
   background-color: var(--cod-gray);
+  font-family: 'Roboto Mono', monospace;
+  /* font-family: 'Syncopate', sans-serif; */
 }
 .flex-column-center {
   display: flex;
