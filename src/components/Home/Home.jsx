@@ -1,6 +1,10 @@
+import "./Home.css";
+
 function Home(){
   return(
-    <>HOME</>
+    <section className="home-wrapper flex-row-center">
+      HOME
+    </section>
   )
 }
 

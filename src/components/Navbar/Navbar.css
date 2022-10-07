@@ -1,4 +1,6 @@
 .Navbar-wrapper { 
+  position: fixed;
+  top: 0;
   border-right: 1px solid var(--mystic-white); 
   height: 100vh;
   width: 12rem;
