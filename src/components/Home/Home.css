@@ -62,7 +62,7 @@
 }
 .media-logos-wrapper { gap: 1rem;}
 .media-logo-wrapper {
-  border: solid var(--yellow-submarine) 2px;
+  border: solid var(--merlo-mustard) 2px;
   width: 50px;
   height: 50px;
   border-radius: 5px;
@@ -98,7 +98,7 @@
   color: var(--deep-purple);
 }
 .mail-line {
-  border: solid 1px var(--yellow-submarine);
+  border: solid 1px var(--merlo-mustard);
   height: 1px;
   width: 125px;
   margin: 1rem 5rem 0 0;
