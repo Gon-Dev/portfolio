@@ -1,0 +1,61 @@
+.about-wrapper {
+  width: 100%;
+  height: 120vh;
+  color: var(--mystic-white);
+  gap: 1rem;
+  background-size: 45px 45px;
+  background-image:
+    linear-gradient(to right, rgba(225,232,235,.15)  1px, transparent 1px),
+    linear-gradient(to bottom, rgba(225,232,235,.15)  1px, transparent 1px);
+  
+}
+.category-wrapper {
+  width: 90%;
+  gap: .5rem;
+}
+.category-line {
+  height: 5px;
+  width: 63px;
+  background-color: var(--deep-purple);
+  margin-bottom: -.5rem;
+}
+.the-developer-title,
+.the-guy-behind-title {
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+}
+.category-skillcards-wrapper {
+  gap: 2rem;
+  align-items: flex-start;
+}
+.the-developer-wrapper,
+.the-developer-wrapper .skillcard-wrapper {
+  align-items: flex-start;
+}
+.the-guy-behind-wrapper,
+.the-guy-behind-wrapper .skillcard-wrapper {
+  align-items: flex-end;
+}
+.the-guy-behind-wrapper .skillcard-wrapper .skillcard-description {
+  text-align: end;
+}
+.skillcard-wrapper {
+  width: 13rem;
+  height: 13.5rem;
+  padding: .75rem;
+  gap: .5rem;
+  background-color: var(--gandalf-grey);
+  border: 2px solid var(--deep-purple);
+  border-radius: 5px;
+  justify-content: flex-start;
+}
+.skillcard-role {
+  font-size: 18px;
+  color: var(--merlo-mustard);
+}
+.skillcard-icon {
+  width: 30px;
+}
+.skillcard-description {
+  font-size: 12px;
+}
