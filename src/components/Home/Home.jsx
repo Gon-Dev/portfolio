@@ -8,9 +8,9 @@ import linkedinLogo from "../../assets/logos/linkedin.png";
 function Home(){
   
   const logos = [
-    {icon: githubLogo, dir: "https://github.com/Gon-Dev"},
-    {icon: twitterLogo, dir: "https://twitter.com/goni_dev"},
-    {icon: linkedinLogo, dir: "https://www.linkedin.com/in/gonzalo-ariel-ruiz/"}
+    {icon: githubLogo, dir: "https://github.com/Gon-Dev", key:"github"},
+    {icon: twitterLogo, dir: "https://twitter.com/goni_dev", key:"twitter"},
+    {icon: linkedinLogo, dir: "https://www.linkedin.com/in/gonzalo-ariel-ruiz/", key:"linkedin"}
   ]
 
   return(
@@ -40,7 +40,7 @@ function Home(){
               <h2 className="tech-profile-designer">and design enthusiast</h2>
             </div>
             <div className="media-logos-wrapper flex-row-center">
-              {logos.map( logo => <MediaLogo logoData={logo} />)}
+              {logos.map( logo => <MediaLogo logoData={logo} key={logo.key}/>)}
             </div>
           </div>
         </div>
