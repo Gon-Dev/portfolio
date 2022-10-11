@@ -5,7 +5,7 @@
   --deep-purple: rgba(121, 82, 179, 1);
   --merlo-mustard: rgba(255, 193, 7, 1);
   --font-stroke-white: 0.25px var(--barry-white);
-  --font-stroke-purple: 0.25px var(--deep-purple);
+  --font-stroke-purple: 0.5px var(--deep-purple);
 } 
 * {
   margin: 0;
