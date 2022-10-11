@@ -1,4 +1,4 @@
-function SkillCard( { icon,role,description } ){
+function DataCard( { icon,role,description } ){
   console.log("corriendo skillcard");
   return(
     <aside className="skillcard-wrapper flex-column-center">
@@ -9,4 +9,4 @@ function SkillCard( { icon,role,description } ){
   )
 }
 
-export default SkillCard;
+export default DataCard;
