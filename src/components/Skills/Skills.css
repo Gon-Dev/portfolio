@@ -1,0 +1,55 @@
+.skills-wrapper {
+  height: 100vh;
+  justify-content: space-between;
+  overflow-x: hidden;
+  color: var(--barry-white);
+}
+.skills-text-band {
+  width: 100%;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: var(--font-stroke-purple);
+}
+.skills-section-title {
+  font-size: 1.875rem;
+}
+.skills-cards-wrapper { /*TODO: see naming, confusion w/element below*/
+  gap: 1rem;
+}
+.skills-card-wrapper { /*TODO: see naming, confusion w/element above*/
+  padding: .75rem 0;
+  width: 118px;
+  height: 158px;
+  border: solid 2px var(--deep-purple);
+  border-radius: 5px;
+  justify-content: space-between;
+}
+.technologies-wrapper,
+.tools-wrapper {
+  align-items: flex-end;
+  gap: 1rem;
+}
+.tools-wrapper {
+  margin-left: auto;
+}
+.technologies-wrapper {
+  align-items: flex-start;
+  flex-direction: column-reverse;
+  margin-right: auto;
+}
+.skills-card-logo {
+  height: 88px;
+}
+.skills-card-title {
+  font-size: 15px;
+  color: var(--merlo-mustard);
+}
+.band-down {
+  transform: rotateY(-180deg);
+}
+.skills-line {
+  width: 100%;
+  border-top: 1px solid var(--deep-purple);
+  margin: -3rem 0rem;
+}
