@@ -24,6 +24,7 @@ function Home(){
       <aside className="hero-wrapper ">
 
         <div className="profile-wrapper flex-row-center">
+          <div className="profile-avatar-background"></div>
           <img 
             className="profile-avatar"
             src={avatar} 
