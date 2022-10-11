@@ -10,7 +10,7 @@
   justify-content: flex-end;
 }
 .know-me-text {
-  color: var(--white-snake);
+  color: var(--barry-white);
   writing-mode: vertical-rl;
   text-orientation: mixed;
   padding-left: .15rem;
@@ -24,7 +24,7 @@
 .hero-wrapper {
   height: 100vh;
   width: 100%;
-  color: var(--white-snake);
+  color: var(--barry-white);
 }
 .profile-wrapper{
   justify-content: flex-start;
@@ -38,7 +38,7 @@
   position: absolute;
   height: 20rem;
   width: 16rem;
-  background-color: var(--white-snake);
+  background-color: var(--barry-white);
   z-index: 0;
   left: 2rem;
   bottom: 3rem;
@@ -101,7 +101,7 @@
   margin: 0 5rem 0 0;
 }
 .mail-background-mailTo {
-  color: var(--white-snake);
+  color: var(--barry-white);
   opacity: .3;
 }
 .mail-link {

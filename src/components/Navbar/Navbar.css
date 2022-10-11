@@ -1,7 +1,8 @@
 .Navbar-wrapper { 
+  background-color: var(--gandalf-grey);
   position: fixed;
   top: 0;
-  border-right: 1px solid var(--white-snake); 
+  border-right: 1px solid var(--barry-white); 
   height: 100vh;
   width: 12rem;
   gap: 2rem;
@@ -13,7 +14,7 @@
 .navbar-dot {
   width: 15px;
   height: 15px;
-  background-color: var(--white-snake);
+  background-color: var(--barry-white);
   border-radius: 50%;
   position: absolute;
   left: -.4rem;
@@ -21,7 +22,7 @@
   /*4rem down/up to next/previous item*/
 }
 .navbar-line {
- border: 1px solid var(--white-snake);
+ border: 1px solid var(--barry-white);
  height: 80vh;
  width: 1px;
 }
@@ -42,7 +43,7 @@
   text-decoration: none;
   font-family: 'Roboto Mono', monospace;
   font-size: 1.25rem;
-  color: var(--white-snake);
+  color: var(--barry-white);
   padding-left: 4rem;
 }
 .navbar-item {
@@ -60,5 +61,5 @@
   font-weight: bold;
   font-family: 'Syncopate', sans-serif;
   color: var(--cod-gray);
-  -webkit-text-stroke: 0.25px var(--white-snake);
+  -webkit-text-stroke: 0.25px var(--barry-white);
 }
