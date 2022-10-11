@@ -66,7 +66,7 @@
   color: transparent;
   font-weight: bold;
   font-family: 'Syncopate', sans-serif;
-  -webkit-text-stroke: var(--font-stroke);
+  -webkit-text-stroke: var(--font-stroke-white);
 }
 .profile-title-greetings-hey {
   font-family: 'Roboto Mono', monospace;

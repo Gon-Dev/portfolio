@@ -4,7 +4,8 @@
   --white-snake: rgba(225,232,235,1);
   --deep-purple: rgba(121, 82, 179, 1);
   --merlo-mustard: rgba(255, 193, 7, 1);
-  --font-stroke: 0.25px var(--mystic-white);
+  --font-stroke-white: 0.25px var(--white-snake);
+  --font-stroke-purple: 0.25px var(--deep-purple);
 } 
 * {
   margin: 0;
