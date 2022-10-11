@@ -24,22 +24,22 @@
   font-size: 1.5rem;
   margin-bottom: .5rem;
 }
-.category-skillcards-wrapper {
+.category-aboutcards-wrapper {
   gap: 2rem;
   align-items: flex-start;
 }
 .the-developer-wrapper,
-.the-developer-wrapper .skillcard-wrapper {
+.the-developer-wrapper .aboutcard-wrapper {
   align-items: flex-start;
 }
 .the-guy-behind-wrapper,
-.the-guy-behind-wrapper .skillcard-wrapper {
+.the-guy-behind-wrapper .aboutcard-wrapper {
   align-items: flex-end;
 }
-.the-guy-behind-wrapper .skillcard-wrapper .skillcard-description {
+.the-guy-behind-wrapper .aboutcard-wrapper .aboutcard-description {
   text-align: end;
 }
-.skillcard-wrapper {
+.aboutcard-wrapper {
   width: 13rem;
   height: 13.5rem;
   padding: .75rem;
@@ -49,13 +49,13 @@
   border-radius: 5px;
   justify-content: flex-start;
 }
-.skillcard-role {
+.aboutcard-role {
   font-size: 18px;
   color: var(--merlo-mustard);
 }
-.skillcard-icon {
+.aboutcard-icon {
   width: 30px;
 }
-.skillcard-description {
+.aboutcard-description {
   font-size: 12px;
 }

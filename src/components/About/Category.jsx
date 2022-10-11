@@ -1,4 +1,4 @@
-import DataCard from './DataCard.jsx';
+import AboutCard from './AboutCard.jsx';
 
 function Category( {title,data} ){
   const lowerTitleName = title.toLowerCase().split(" ").join("-");
@@ -6,8 +6,8 @@ function Category( {title,data} ){
     <aside className={`category-wrapper ${lowerTitleName}-wrapper flex-column-center`}>
       <div className={`category-line ${lowerTitleName}-line`}></div>
       <h1 className={`category-title ${lowerTitleName}-title`} category-title>{title}</h1>
-      <div className="category-skillcards-wrapper flex-row-center">
-        {data.map( item => <DataCard icon={item.icon} role={item.role} description={item.description}/> )}
+      <div className="category-aboutcards-wrapper flex-row-center">
+        {data.map( item => <AboutCard icon={item.icon} role={item.role} description={item.description}/> )}
       </div>
     </aside>
   )
