@@ -1,15 +1,30 @@
 .skills-wrapper {
-  height: 100vh;
-  justify-content: space-between;
-  overflow-x: hidden;
-  color: var(--barry-white);
-}
-.skills-text-band {
+  padding: 0rem 3rem;
+  height: 105vh;
   width: 100%;
-  font-size: 2.5rem;
+  justify-content: space-around;
+  color: var(--barry-white);
+  overflow-x: hidden;
+  gap: 1rem;
+}
+
+.marquee-text {
+  line-height: 200px;
+  width: 100%;
+  font-size: 4rem;
   font-weight: 900;
   color: transparent;
   -webkit-text-stroke: var(--font-stroke-purple);
+}
+.band-up {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: marqueeLeft 1000s linear infinite;
+}
+.band-down {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: marqueeRight 1000s linear infinite;
 }
 .skills-section-title {
   font-size: 1.875rem;
@@ -51,5 +66,22 @@
 .skills-line {
   width: 100%;
   border-top: 1px solid var(--deep-purple);
-  margin: -3rem 0rem;
+  /* margin: -1rem 0rem; */
+}
+
+@keyframes marqueeRight {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes marqueeLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
