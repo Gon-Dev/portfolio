@@ -19,7 +19,7 @@
 .band-up {
   overflow: hidden;
   white-space: nowrap;
-  animation: marqueeLeft 1000s linear infinite;
+  animation: marqueeLeft 3000s linear infinite;
 }
 .band-down {
   overflow: hidden;
@@ -27,18 +27,32 @@
   animation: marqueeRight 1000s linear infinite;
 }
 .skills-section-title {
-  font-size: 1.875rem;
+  font-size: 1.5rem;
 }
 .skills-cards-wrapper { /*TODO: see naming, confusion w/element below*/
-  gap: 1rem;
+  gap: 2rem;
 }
 .skills-card-wrapper { /*TODO: see naming, confusion w/element above*/
-  padding: .75rem 0;
-  width: 118px;
-  height: 158px;
+  padding: 1rem;
+  width: 7rem;
+  height: 8rem;
   border: solid 2px var(--deep-purple);
   border-radius: 5px;
   justify-content: space-between;
+}
+.technologies-wrapper {
+  opacity: 0;
+  transform: translateX(70rem);
+  transition: 1s cubic-bezier(.02,.43,.06,.97);
+}
+.tools-wrapper {
+  opacity: 0;
+  transform: translateX(-70rem);
+  transition: 1s cubic-bezier(.02,.43,.06,.97);
+}
+.skills-slide-in {
+  opacity: 1;
+  transform: translateX(0rem);
 }
 .technologies-wrapper,
 .tools-wrapper {
@@ -54,7 +68,7 @@
   margin-right: auto;
 }
 .skills-card-logo {
-  height: 88px;
+  height: 4rem;
 }
 .skills-card-title {
   font-size: 15px;
@@ -85,3 +99,4 @@
     transform: translateX(-100%);
   }
 }
+
