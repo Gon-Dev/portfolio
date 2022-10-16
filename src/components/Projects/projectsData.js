@@ -25,7 +25,7 @@ const projectsData = [
   },
   {
     title: "NPCrafter",
-    description: "NPC (non-playable character) Crafter is a character generator. Thought for roleplayers and narrators, seek for an image from the endless gallery, load the character data and keep them for you next D&D session.",
+    description: "NPCrafter is a character generator. Thought for roleplayers and narrators, you can navigate the gallery, load the character data and keep them for you next D&D session.",
     technologies: "HTML | CSS | Javascript",
     previewUrl: "https://gon-dev.github.io/npcrafter/",
     repoUrl: "https://github.com/gon-dev/npcrafter",
