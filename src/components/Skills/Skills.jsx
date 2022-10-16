@@ -5,15 +5,24 @@ import './Skills.css';
 function Skills(){
   return(
     <section className="skills-wrapper flex-column-center">
-      <div className="marquee-wrapper flex-row-center band-up">
-        <p className="marquee-text"> HTML | CSS | JAVASCRIPT | REACT | HTML | CSS | JAVASCRIPT | REACT | HTML | CSS | JAVASCRIPT | REACT | HTML | CSS | JAVASCRIPT | REACT | HTML | CSS | JAVASCRIPT | REACT | HTML | CSS | JAVASCRIPT | REACT | HTML | CSS | JAVASCRIPT | REACT | HTML | CSS | JAVASCRIPT | REACT | HTML | CSS | JAVASCRIPT | REACT | </p>
+      
+      <div className="marquee-container">
+        <div className="marquee-text marquee-up-first">&nbsp;\ HTML \ CSS \ JAVASCRIPT \ REACT</div>
+        <div className="marquee-text marquee-up-second">&nbsp;\ HTML \ CSS \ JAVASCRIPT \ REACT</div>
       </div>
-      <SkillsSection title="Technologies" data={technologies} />
-      <div className="skills-line"></div>
-      <SkillsSection title="Tools" data={tools} />
-      <div className="marquee-wrapper flex-row-center band-down">
-        <p className="marquee-text"> GIT | FIGMA | VITE | VERCEL | GIT | FIGMA | VITE | VERCEL | GIT | FIGMA | VITE | VERCEL | GIT | FIGMA | VITE | VERCEL | GIT | FIGMA | VITE | VERCEL | GIT | FIGMA | VITE | VERCEL | GIT | FIGMA | VITE | VERCEL | GIT | FIGMA | VITE | VERCEL | GIT | FIGMA | VITE | VERCEL | GIT | FIGMA | VITE | VERCEL | GIT |  </p>
+
+      <div className="skills-main-wrapper">
+        <SkillsSection title="Technologies" data={technologies} />
+        <div className="skills-line"></div>
+        <SkillsSection title="Tools" data={tools} />
+
       </div>
+
+      <div className="marquee-container">
+        <div className="marquee-text marquee-down-first">&nbsp;/ GIT / FIGMA / VITE / VERCEL</div>
+        <div className="marquee-text marquee-down-second">&nbsp;/ GIT / FIGMA / VITE / VERCEL</div>
+      </div>
+
     </section>
   )
 }

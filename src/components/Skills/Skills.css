@@ -1,33 +1,16 @@
 .skills-wrapper {
-  padding: 0rem 3rem;
+  padding: 0rem 2rem;
   height: 105vh;
   width: 100%;
-  justify-content: space-around;
   color: var(--barry-white);
   overflow-x: hidden;
-  gap: 1rem;
-}
-
-.marquee-text {
-  line-height: 200px;
-  width: 100%;
-  font-size: 4rem;
-  font-weight: 900;
-  color: transparent;
-  -webkit-text-stroke: var(--font-stroke-purple);
-}
-.band-up {
-  overflow: hidden;
-  white-space: nowrap;
-  animation: marqueeLeft 3000s linear infinite;
-}
-.band-down {
-  overflow: hidden;
-  white-space: nowrap;
-  animation: marqueeRight 1000s linear infinite;
 }
 .skills-section-title {
   font-size: 1.5rem;
+}
+.skills-main-wrapper {
+  margin: 4rem 0;
+  width: 100%; 
 }
 .skills-cards-wrapper { /*TODO: see naming, confusion w/element below*/
   gap: 2rem;
@@ -39,20 +22,6 @@
   border: solid 2px var(--deep-purple);
   border-radius: 5px;
   justify-content: space-between;
-}
-.technologies-wrapper {
-  opacity: 0;
-  transform: translateX(70rem);
-  transition: 1s cubic-bezier(.02,.43,.06,.97);
-}
-.tools-wrapper {
-  opacity: 0;
-  transform: translateX(-70rem);
-  transition: 1s cubic-bezier(.02,.43,.06,.97);
-}
-.skills-slide-in {
-  opacity: 1;
-  transform: translateX(0rem);
 }
 .technologies-wrapper,
 .tools-wrapper {
@@ -74,29 +43,69 @@
   font-size: 15px;
   color: var(--merlo-mustard);
 }
-.band-down {
-  transform: rotateY(-180deg);
-}
 .skills-line {
   width: 100%;
   border-top: 1px solid var(--deep-purple);
-  /* margin: -1rem 0rem; */
+  margin: 1rem 0;
+}
+.marquee-container {
+  user-select: none;
+  width: 100vw;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.marquee-text {
+  display: inline-block;
+  line-height: 4rem;
+  font-size: 4rem;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: var(--font-stroke-purple);
+}
+.marquee-up-first {
+animation: marqueeLeftFirst 100s linear infinite;
+}
+.marquee-up-second {
+  animation: marqueeLeftSecond 100s linear infinite;
+  animation-delay: 50s;
+}
+.marquee-down-first {
+  animation: marqueeRightFirst 100s linear infinite;
+}
+.marquee-down-second {
+  animation: marqueeRightSecond 100s linear infinite;
+  animation-delay: 50s;
 }
 
-@keyframes marqueeRight {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
+@keyframes marqueeLeftFirst {
+  from {
     transform: translateX(100%);
   }
-}
-@keyframes marqueeLeft {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
+  to {
     transform: translateX(-100%);
   }
 }
-
+@keyframes marqueeLeftSecond {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+@keyframes marqueeRightFirst {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+@keyframes marqueeRightSecond {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
