@@ -1,5 +1,6 @@
 function CarouselItem({ title,description,technologies,previewUrl,repoUrl,screens }) {
   const [desktopScreen,mobileScreen] = screens;
+
   return (
     <aside className="carousel-item-wrapper flex-column-center">
       <img className="carousel-item-desktop-screen" src={desktopScreen} alt={`${title} widescreen capture`} />
