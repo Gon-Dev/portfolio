@@ -48,6 +48,11 @@
   border: 2px solid var(--deep-purple);
   border-radius: 5px;
   justify-content: flex-start;
+  transition: .2s ease-in-out;
+}
+.aboutcard-wrapper:hover {
+  transform: scale(130%);
+  cursor: none;
 }
 .aboutcard-role {
   font-size: 18px;
