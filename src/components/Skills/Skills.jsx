@@ -6,7 +6,7 @@ function Skills(){
   return(
     <section className="skills-wrapper flex-column-center">
       
-      <div className="marquee-container">
+      <div className="marquee-container marquee-up">
         <div className="marquee-text marquee-up-first">&nbsp;\ HTML \ CSS \ JAVASCRIPT \ REACT</div>
         <div className="marquee-text marquee-up-second">&nbsp;\ HTML \ CSS \ JAVASCRIPT \ REACT</div>
       </div>
@@ -18,7 +18,7 @@ function Skills(){
 
       </div>
 
-      <div className="marquee-container">
+      <div className="marquee-container marquee-down">
         <div className="marquee-text marquee-down-first">&nbsp;/ GIT / FIGMA / VITE / VERCEL</div>
         <div className="marquee-text marquee-down-second">&nbsp;/ GIT / FIGMA / VITE / VERCEL</div>
       </div>

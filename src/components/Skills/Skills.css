@@ -62,12 +62,16 @@
   color: transparent;
   -webkit-text-stroke: var(--font-stroke-purple);
 }
+
 .marquee-up-first {
 animation: marqueeLeftFirst 100s linear infinite;
 }
 .marquee-up-second {
   animation: marqueeLeftSecond 100s linear infinite;
   animation-delay: 50s;
+}
+.marquee-down {
+  padding: 0 0 0 4rem;
 }
 .marquee-down-first {
   animation: marqueeRightFirst 100s linear infinite;
