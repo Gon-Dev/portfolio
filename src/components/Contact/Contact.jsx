@@ -1,6 +1,10 @@
+import ContactForm from './ContactForm';
+import './Contact.css';
 function Contact(){
   return(
-    <>Contact</>
+    <section className="contact-section-wrapper flex-row-center">
+      <ContactForm />
+    </section>
   )
 }
 
