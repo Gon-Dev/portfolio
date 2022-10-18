@@ -46,8 +46,9 @@
 }
 .form-submit {
   height: 2.5rem;
-  width: 8rem;
+  width: 9rem;
   margin: 0 0 0 auto;
+  font-weight: 700;
   background: none;
   border: 2px solid var(--merlo-mustard);
   border-radius: 5px;

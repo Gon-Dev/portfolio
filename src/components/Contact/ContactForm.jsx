@@ -12,7 +12,7 @@ function ContactForm(){
         <div className="form-textarea-container">
           <textarea className="form-description" name="" id="" placeholder="Description"></textarea>
         </div>
-        <button className="form-submit" type="submit">Send Comment</button>
+        <button className="form-submit" type="submit">SEND COMMENT</button>
       </form>
 
     </div>
