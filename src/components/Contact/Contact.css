@@ -24,12 +24,12 @@
   width: 100%;
   height: 10rem;
 }
-.form-description {
+.form-message {
   resize: none;
   height: 100%;
 }
 .form-input,
-.form-description {
+.form-message {
   width: 100%;
   background-color: rgba(225,232,235,.12); /*transparent barry white*/
   border: 1px solid var(--deep-purple);
@@ -40,7 +40,7 @@
   color: var(--barry-white);
 }
 .form-input:focus,
-.form-description:focus {
+.form-message:focus {
   border: 1px solid var(--merlo-mustard);
   outline: none;
 }
