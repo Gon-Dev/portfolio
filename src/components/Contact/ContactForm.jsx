@@ -30,7 +30,7 @@ function ContactForm(){
   const handleChange = (event) => {
     event.target.classList.contains("input-name") && setUserName(event.target.value);
     event.target.classList.contains("input-email") && setUserEmail(event.target.value);
-    event.target.classList.contains("text-description") && setUMessage(event.target.value);
+    event.target.classList.contains("text-message") && setUMessage(event.target.value);
   }
   
   return(
