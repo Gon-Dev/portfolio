@@ -1,13 +1,17 @@
 import './Home.css';
+import { sectionContext } from '../../App';
+import { useContext, useEffect, useRef } from 'react';
 import arrow from '../../assets/symbols/know-me-arrow.svg';
 import avatar from '../../assets/illustration/avatar.svg';
 import MediaLogo from './MediaLogo.jsx';
 import logos from './logos.js';
 function Home(){
-
+  const { observer } = useContext(sectionContext);
+  const homeElement = useRef(null);
+  useEffect(()=>{ homeElement ? observer.observe(homeElement.current) : null},[homeElement])
 
   return(
-    <section className="home-wrapper flex-row-center">
+    <section className="home-wrapper flex-row-center" ref={homeElement}>
 
       <aside className="know-me-wrapper flex-column-center">
         <p className="know-me-text">know me</p>

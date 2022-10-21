@@ -1,10 +1,15 @@
+import './Skills.css';
+import { sectionContext } from '../../App';
+import { useContext, useEffect, useRef } from 'react';
 import technologies from './section-technologies.js';
 import tools from './section-tools.js';
 import SkillsSection from './SkillsSection.jsx';
-import './Skills.css';
 function Skills(){
+  const { observer } = useContext(sectionContext);
+  const skillsElement = useRef(null);
+  useEffect(()=>{ skillsElement ? observer.observe(skillsElement.current) : null},[skillsElement])
   return(
-    <section className="skills-wrapper flex-column-center">
+    <section className="skills-wrapper flex-column-center" ref={skillsElement}>
       
       <div className="marquee-container marquee-up">
         <div className="marquee-text marquee-up-first">&nbsp;\ HTML \ CSS \ JAVASCRIPT \ REACT</div>
