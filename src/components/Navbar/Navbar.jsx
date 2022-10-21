@@ -1,6 +1,10 @@
 import './Navbar.css';
 
 function Navbar(){
+
+  //importar seccion activa
+  //clases condicional segun seccion activa
+
   return(
     <div className="Navbar-wrapper flex-row-center">
       <div className="navbar-line-wrapper">
@@ -13,29 +17,29 @@ function Navbar(){
           <aside className="navbar-last-name">RUIZ</aside>
         </div>
         <li className="navbar-item">
-          <a className="navbar-link" href="#">
+          <button className="navbar-link" href="#">
             home
-          </a>
+          </button>
         </li>
         <li className="navbar-item">
-          <a className="navbar-link" href="#">
+          <button className="navbar-link" href="#">
             about
-          </a>
+          </button>
         </li>
         <li className="navbar-item">
-          <a className="navbar-link" href="#">
+          <button className="navbar-link" href="#">
             skills
-          </a>
+          </button>
         </li>
         <li className="navbar-item">
-          <a className="navbar-link" href="#">
+          <button className="navbar-link" href="#">
             projects
-          </a>
+          </button>
         </li>
         <li className="navbar-item">
-          <a className="navbar-link" href="#">
+          <button className="navbar-link" href="#">
             contact
-          </a>
+          </button>
         </li>
       </ul>
     </div>
