@@ -47,6 +47,11 @@
   color: var(--barry-white);
   padding-left: 4rem;
 }
+.navbar-link {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 .navbar-item {
   display: flex;
   align-items: center;
