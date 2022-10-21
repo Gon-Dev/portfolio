@@ -1,17 +1,10 @@
-import "./Home.css";
-import arrow from "../../assets/symbols/know-me-arrow.svg";
-import avatar from "../../assets/illustration/avatar.svg";
-import MediaLogo from "./MediaLogo.jsx";
-import githubLogo from "../../assets/logos/github.png";
-import twitterLogo from "../../assets/logos/twitter.png";
-import linkedinLogo from "../../assets/logos/linkedin.png";
+import './Home.css';
+import arrow from '../../assets/symbols/know-me-arrow.svg';
+import avatar from '../../assets/illustration/avatar.svg';
+import MediaLogo from './MediaLogo.jsx';
+import logos from './logos.js';
 function Home(){
-  
-  const logos = [
-    {icon: githubLogo, dir: "https://github.com/Gon-Dev", key:"github"},
-    {icon: twitterLogo, dir: "https://twitter.com/goni_dev", key:"twitter"},
-    {icon: linkedinLogo, dir: "https://www.linkedin.com/in/gonzalo-ariel-ruiz/", key:"linkedin"}
-  ]
+
 
   return(
     <section className="home-wrapper flex-row-center">
