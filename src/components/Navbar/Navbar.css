@@ -12,16 +12,6 @@
   position: absolute;
   left: 2rem;
 }
-.navbar-dot {
-  width: 15px;
-  height: 15px;
-  background-color: var(--barry-white);
-  border-radius: 50%;
-  position: absolute;
-  left: -.4rem;
-  top: 10.7rem;
-  /*4rem down/up to next/previous item*/
-}
 .navbar-line {
  border: 1px solid var(--barry-white);
  height: 80vh;
@@ -57,6 +47,9 @@
   align-items: center;
   height: 3rem;
   width: 100%;
+}
+.navbar-item.active {
+  background-color: rgba(225,232,235,0.3);
 }
 .navbar-item:hover {
   background-color: rgba(225,232,235,0.13);
