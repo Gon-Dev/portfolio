@@ -2,7 +2,7 @@ import ContactForm from './ContactForm';
 import './Contact.css';
 function Contact(){
   return(
-    <section className="contact-section-wrapper flex-row-center">
+    <section className="contact-wrapper flex-row-center">
       <ContactForm />
     </section>
   )

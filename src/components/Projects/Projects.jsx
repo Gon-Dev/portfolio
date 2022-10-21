@@ -4,7 +4,7 @@ import './Projects.css';
 
 function Projects(){
   return(
-    <section className="projects-section-wrapper flex-row-center">
+    <section className="projects-wrapper flex-row-center">
       <Carousel data={projectsData} />
     </section>
   )
