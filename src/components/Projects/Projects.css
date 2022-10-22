@@ -1,7 +1,6 @@
 .projects-wrapper {
   color: var(--barry-white);
-  --height: 100vh;
-  height: var(--height);
+  height: 100vh;
   width: 100%;
   background-size: calc(100vh / 10) calc(100vh / 10);
   background-image:
