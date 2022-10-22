@@ -5,17 +5,17 @@ import arrowPrevIcon from '../../assets/symbols/arrow-prev.svg'
 function Carousel({ data }){
   const [currentSlide,setCurrentSlide] = useState(0);
   const handleCarouselButtonClick = (event) => {
-    event.target.classList.contains("next") && setCurrentSlide(currentSlide => currentSlide < data.length - 1 ? currentSlide + 1 : 0);
-    event.target.classList.contains("prev") && setCurrentSlide(currentSlide => currentSlide !== 0 ? currentSlide - 1 : data.length - 1);
+    event.currentTarget.classList.contains("button-next") && setCurrentSlide(currentSlide => currentSlide < data.length - 1 ? currentSlide + 1 : 0);
+    event.currentTarget.classList.contains("button-prev") && setCurrentSlide(currentSlide => currentSlide !== 0 ? currentSlide - 1 : data.length - 1);
   }
   return(
     <aside className="carousel-wrapper flex-row-center">
 
       <div className="carousel-buttons-wrapper flex-row-center">
-        <button className="carousel-button button-prev" onClick={handleCarouselButtonClick}>
+        <button className="carousel-button button-prev flex-row-center" onClick={handleCarouselButtonClick}>
           <img className="carousel-button-icon prev" src={arrowPrevIcon} alt="" />
         </button>
-        <button className="carousel-button button-next" onClick={handleCarouselButtonClick}>
+        <button className="carousel-button button-next flex-row-center" onClick={handleCarouselButtonClick}>
           <img className="carousel-button-icon next" src={arrowNextIcon} alt="" />
         </button>
       </div>
