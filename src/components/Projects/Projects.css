@@ -1,11 +1,13 @@
 .projects-wrapper {
   color: var(--barry-white);
-  height: 100vh;
+  --height: 100vh;
+  height: var(--height);
   width: 100%;
-  background-size: 50px 50px;
+  background-size: calc(100vh / 10) calc(100vh / 10);
   background-image:
-    linear-gradient(to right, rgba(225,232,235,.15)  1px, transparent 1px),
-    linear-gradient(to bottom, rgba(225,232,235,.15)  1px, transparent 1px);
+    linear-gradient(to right, rgba(225,232,235,.1)  1px, transparent 1px),
+    linear-gradient(to bottom, rgba(225,232,235,.1)  1px, transparent 1px);
+  border-bottom: 1px solid rgba(225,232,235,.1);
 }
 
 .carousel-wrapper,
@@ -38,7 +40,7 @@
   position: relative;
 }
 .carousel-button-icon {
-  height: 2rem;
+  height: 1.5rem;
 }
 .carousel-item-wrapper img {
   border-radius: 5px;
@@ -75,10 +77,16 @@
 .carousel-item-data-link {
   text-decoration: none;
   color: var(--merlo-mustard);
+  gap: .5rem;
+}
+.link-icon {
+  width: .75rem;
+  margin-top: .2rem;
 }
 .carousel-item-data-wrapper a:hover {
   color: var(--merlo-mustard);
 }
+
 .carousel-button {
   width: 3rem;
   height: 3rem;
