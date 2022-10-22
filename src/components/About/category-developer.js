@@ -5,13 +5,13 @@ const developer = [
   {
     icon: developerIcon,
     role: "Web Developer",
-    description: "I solve problems in a scalable, performing and reliable way. I dream with a world in which the web is accesible for everyone, no matter any disability.",
+    description: "I build user interfaces with core CSS and React for the best compatibility and scalability posible, no additives or strange libraries added!",
     key: "developer"
   },
   {
     icon: designerIcon,
     role: "UI Designer",
-    description: "I believe the critical thinking in matter of layout, color and morphology leads to an intuitive interface and a comfortable user experience.",
+    description: "The correct application of the gestalt laws allows us to build intuitive and comfortable interfaces, in which the information is the real protagonist.",
     key: "designer"
   },
   {
