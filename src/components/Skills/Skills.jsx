@@ -5,9 +5,10 @@ import technologies from './section-technologies.js';
 import tools from './section-tools.js';
 import SkillsSection from './SkillsSection.jsx';
 function Skills(){
-  const { observer } = useContext(sectionContext);
+  const { activeSection,observer } = useContext(sectionContext);
   const skillsElement = useRef(null);
-  useEffect(()=>{ skillsElement ? observer.observe(skillsElement.current) : null},[skillsElement])
+  useEffect(()=>{ skillsElement ? observer.observe(skillsElement.current) : null},[skillsElement]);
+  const isSkillsSectionActive = activeSection === skillsElement.current;
   return(
     <section className="skills-wrapper flex-column-center" ref={skillsElement}>
       
@@ -17,9 +18,9 @@ function Skills(){
       </div>
 
       <div className="skills-main-wrapper">
-        <SkillsSection title="Technologies" data={technologies} />
+        <SkillsSection title="Technologies" data={technologies} isSkillsSectionActive={isSkillsSectionActive}/>
         <div className="skills-line"></div>
-        <SkillsSection title="Tools" data={tools} />
+        <SkillsSection title="Tools" data={tools} isSkillsSectionActive={isSkillsSectionActive}/>
 
       </div>
 

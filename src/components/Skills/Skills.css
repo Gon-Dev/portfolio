@@ -27,9 +27,19 @@
 .tools-wrapper {
   align-items: flex-end;
   gap: 1rem;
+  transition: all ease-in-out .75s;
+  opacity: 0;
+}
+.technologies-wrapper{
+  transform: translate(75rem);
 }
 .tools-wrapper {
-  margin-left: auto;
+  transform: translate(-75rem);
+}
+.tools-wrapper.active,
+.technologies-wrapper.active {
+  transform: translate(0rem);
+  opacity: 1;
 }
 .technologies-wrapper {
   align-items: flex-start;
