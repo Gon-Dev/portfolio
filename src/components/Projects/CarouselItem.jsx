@@ -1,3 +1,4 @@
+import linkIcon from '../../assets/symbols/link.svg';
 function CarouselItem({ title,description,technologies,previewUrl,repoUrl,screens }) {
   const [desktopScreen,mobileScreen] = screens;
 
@@ -16,24 +17,21 @@ function CarouselItem({ title,description,technologies,previewUrl,repoUrl,screen
             </h5>
             <p>{technologies}</p>
           </div>
-          <div className="carousel-item-data">
-            <h5 className="carousel-item-data-heading">
-              Live Preview
-            </h5>
-            <a className="carousel-item-data-link" href={previewUrl} target="_blank">{previewUrl}</a>
-          </div>
-          <div className="carousel-item-data">
-            <h5 className="carousel-item-data-heading">
-              Repository
-            </h5>
-            <a className="carousel-item-data-link" href={repoUrl} target="_blank">{repoUrl}</a>
-          </div>
+
           <div className="carousel-item-data">
             <h5 className="carousel-item-data-heading">
               Description
             </h5>
             <p>{description}</p>
           </div>
+          <a className="carousel-item-data-link carousel-item-data flex-row-center" href={previewUrl} target="_blank">
+            Live Preview
+            <img className="link-icon" src={linkIcon} alt="" />
+          </a>
+          <a className="carousel-item-data-link carousel-item-data flex-row-center" href={repoUrl} target="_blank">
+            Repository
+            <img className="link-icon" src={linkIcon} alt="" />
+          </a>
         </div>
       </div>
     </aside>
