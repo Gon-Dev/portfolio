@@ -5,7 +5,7 @@ function Category( {isAboutSectionActive,title,data} ){
     <aside className={`category-wrapper ${lowerTitleName}-wrapper ${isAboutSectionActive ? "visible" : null} flex-column-center`}>
       <div className={`category-line ${lowerTitleName}-line`}></div>
       <h1 className={`category-title ${lowerTitleName}-title`}>{title}</h1>
-      <div className="category-aboutcards-wrapper flex-row-center">
+      <div className="category-about cards-wrapper flex-row-center">
         {data.map( item => <AboutCard icon={item.icon} role={item.role} description={item.description} key={item.key}/> )}
       </div>
     </aside>

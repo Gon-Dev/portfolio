@@ -121,3 +121,36 @@ animation: marqueeLeftFirst 50s linear infinite;
     transform: translateX(0%);
   }
 }
+
+@media (max-width: 480px) {
+  .skills-wrapper {
+    height: 105vh;
+    padding: 2rem 1rem;
+  }
+  .skills-cards-wrapper {
+    gap: 1rem;
+  }
+  .skills-card-wrapper {
+    width: 5.25rem;
+    height: 6rem;
+    padding: .5rem;
+  }
+  .skills-card-title {
+    font-size: .75rem;
+  }
+  .skills-card-logo {
+    height: 3rem;
+  }
+  .technologies-wrapper{
+    transform: translate(10rem);
+  }
+  .tools-wrapper {
+    transform: translate(-10rem);
+  }
+  .skills-section-title {
+    font-size: 1.25rem;
+  }
+  .marquee-text {
+    font-size: 3rem;
+  }
+}

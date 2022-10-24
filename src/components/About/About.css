@@ -9,6 +9,9 @@
     linear-gradient(to bottom, rgba(225,232,235,.1)  1px, transparent 1px);
   border-bottom: 1px solid rgba(225,232,235,.1);
 }
+.cards-wrapper {
+  gap: 3rem;
+}
 .category-wrapper {
   width: 90%;
   gap: .5rem;
@@ -39,22 +42,22 @@
   transform: translate(0);
   opacity: 1;
 }
-.category-aboutcards-wrapper {
+.category-about-cards-wrapper {
   gap: 2rem;
   align-items: flex-start;
 }
 .the-developer-wrapper,
-.the-developer-wrapper .aboutcard-wrapper {
+.the-developer-wrapper .about-card-wrapper {
   align-items: flex-start;
 }
 .the-guy-behind-wrapper,
-.the-guy-behind-wrapper .aboutcard-wrapper {
+.the-guy-behind-wrapper .about-card-wrapper {
   align-items: flex-end;
 }
-.the-guy-behind-wrapper .aboutcard-wrapper .aboutcard-description {
+.the-guy-behind-wrapper .about-card-wrapper .about-card-description {
   text-align: end;
 }
-.aboutcard-wrapper {
+.about-card-wrapper {
   width: 13rem;
   height: 13.5rem;
   padding: .75rem;
@@ -65,17 +68,57 @@
   justify-content: flex-start;
   transition: .2s ease-in-out;
 }
-.aboutcard-wrapper:hover {
+.about-card-wrapper:hover {
   transform: scale(130%);
-  cursor: none;
+  cursor:default;
 }
-.aboutcard-role {
+.about-card-role {
   font-size: 18px;
   color: var(--merlo-mustard);
 }
-.aboutcard-icon {
+.about-card-icon {
   width: 30px;
 }
-.aboutcard-description {
+.about-card-description {
   font-size: 12px;
+}
+
+@media (max-width: 480px) {
+  .about-wrapper {
+    height: 140vh;
+    flex-direction: row;
+    padding: 0 1rem;
+  }
+  .category-wrapper {
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+  }
+  .category-wrapper > h1 {
+    font-size: 1.25rem;
+  }
+  .cards-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .about-card-wrapper {
+    width: 11rem;
+    height: 200px;
+    gap: .25rem;
+  }
+  .about-card-wrapper:hover {
+    transform: none;
+  }
+  .about-card-wrapper > h3 {
+    font-size: 1rem;
+  }
+  .about-card-wrapper > p {
+    font-size: .65rem;
+  }
+  .the-developer-wrapper {
+    transform: translate(-5rem);
+  }
+  .the-guy-behind-wrapper {
+    transform: translate(5rem);
+  }
 }
