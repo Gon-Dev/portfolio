@@ -115,3 +115,81 @@
   width: 125px;
   margin: 1rem 5rem 0 0;
 }
+@media (max-width: 480px) {
+  .home-wrapper {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .profile-avatar {
+    width: 165px;
+  }
+  .profile-avatar-background {
+    width: 100px;
+    height: 100px;
+    top: 3rem;
+    left: 10rem;
+  }
+
+  .profile-wrapper {
+    flex-direction: column;
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .profile-title-wrapper {
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  .profile-title-greetings-hey,
+  .profile-title-greetings-name,
+  .profile-title-greetings-last-name,
+  .tech-profile-developer,
+  .tech-profile-designer {
+    text-align: center;
+  }
+  .profile-title-greetings-hey,
+  .tech-profile-developer,
+  .tech-profile-designer {
+    font-size: 1.25rem;
+  }
+  .profile-title-greetings-name {
+    font-size: 2rem;
+  }
+  .profile-title-greetings-last-name {
+    font-size: 2.5rem;
+  }
+  .media-logo-wrapper {
+    width: 40px;
+    height: 40px;
+  }
+  .media-logo {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+  .know-me-wrapper {
+    position: absolute;
+    left: 10px;
+    bottom: -3rem;
+    width: 2rem;
+  }
+  .know-me-text {
+    font-size: 12px;
+  }
+  .mail-wrapper-outer {
+    position: absolute;
+    right: 20px;
+    bottom: 4em;
+    width: 100%;
+    height: 1rem;
+  }
+  .mail-wrapper-inner {
+    margin: 0 1rem 0 0;
+    font-size: 12px;
+  }
+  .mail-line {
+    margin-right: 0;
+    border-top: none;
+  }
+}

@@ -3,3 +3,8 @@
   /* height: 100vh; */
   padding: 0 0 0 12rem;
 }
+@media (max-width: 480px) {
+  .main-wrapper {
+    padding: 0;
+  }
+}

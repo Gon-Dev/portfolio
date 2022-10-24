@@ -33,3 +33,15 @@ body {
   justify-content: flex-start;
   overflow-x: hidden;
 }
+
+@media (max-width: 480px) {
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  .App {
+    justify-content: center;
+    width: 100vw;
+    flex-direction: column;
+    
+  }
+}

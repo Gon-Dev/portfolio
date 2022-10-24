@@ -8,7 +8,7 @@ function Navbar(){
   let activeSectionName = activeSection ? activeSection.className.split("-")[0] : null;
 
   return(
-    <div className="Navbar-wrapper flex-row-center">
+    <div className="navbar-wrapper flex-row-center">
       <div className="navbar-line-wrapper">
         <div className="navbar-line"></div>
       </div>
