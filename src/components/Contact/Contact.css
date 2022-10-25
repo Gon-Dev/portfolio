@@ -54,7 +54,20 @@
   border-radius: 5px;
   color: var(--barry-white);
   cursor: pointer;
+  font-family: 'Roboto Mono', monospace;
 }
 .form-submit:active {
   transform: scale(90%);
+}
+@media (max-width: 480px) {
+  .contact-form-wrapper {
+    width: 25rem;
+    height: 28rem;
+  }
+  .form-container {
+    width: 90%;
+  }
+  .form-title {
+    font-size: 15px;
+  }
 }

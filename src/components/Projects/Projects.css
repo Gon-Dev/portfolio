@@ -102,3 +102,35 @@
 .button-next:active {
   transform: translateX(5px);
 }
+@media (max-width: 480px) {
+  .carousel-wrapper,
+  .carousel-item-wrapper {
+    width: 25rem;
+  }
+  .carousel-buttons-wrapper {
+    gap: 22rem;
+  }
+  .carousel-inner {
+    transition: ease 1s;
+    gap: 20rem;
+  }
+  .carousel-item-wrapper {
+    width: 25rem;
+    height: 29.5rem;
+  }
+  .carousel-button-icon {
+    height: 1.5rem;
+  }
+  .carousel-item-data-wrapper {
+    gap: 1rem;
+  }
+  .carousel-item-data-title {
+    font-size: 1.5rem;
+  }
+  .carousel-item-data {
+    font-size: 12px;
+  }
+  .carousel-item-data-link {
+    font-size: 14px;
+  }
+}
