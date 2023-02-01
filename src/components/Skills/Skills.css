@@ -1,6 +1,6 @@
 .skills-wrapper {
   padding: 0rem 2rem;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   color: var(--barry-white);
   overflow-x: hidden;
@@ -24,6 +24,7 @@
   border: solid 2px var(--deep-purple);
   border-radius: 5px;
   justify-content: space-between;
+  box-shadow: 5px 5px 0px 0px rgba(82, 255, 184, 0.6);
 }
 .technologies-wrapper,
 .tools-wrapper {
@@ -53,11 +54,12 @@
 }
 .skills-card-title {
   font-size: 15px;
-  color: var(--merlo-mustard);
+  color: var(--unnatural-green);
 }
 .skills-line {
   width: 100%;
-  border-top: 1px solid var(--deep-purple);
+  height: 1px;
+  background-color: var(--unnatural-green);
   margin: 1rem 0;
 }
 .marquee-container {
@@ -126,7 +128,7 @@
 
 @media (max-width: 480px) {
   .skills-wrapper {
-    height: 105vh;
+    height: fit-content;
     padding: 2rem 1rem;
   }
   .skills-main-wrapper {
@@ -155,9 +157,8 @@
   .technologies-wrapper
     .skills-cards-wrapper
     .skills-card-wrapper:nth-child(1) {
-    margin-right: 60vw; /* Pushes items to get symetric layout with the tools-wrapper, when adding new items this must be modified*/ 
+    margin: 0 60% 0 0;
   }
-
   .skills-card-title {
     font-size: 0.75rem;
   }
@@ -175,5 +176,12 @@
   }
   .marquee-text {
     font-size: 3rem;
+  }
+}
+@media (max-width: 319px) {
+  .technologies-wrapper
+    .skills-cards-wrapper
+    .skills-card-wrapper:nth-child(1) {
+    margin: 0;
   }
 }
