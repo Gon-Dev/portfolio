@@ -1,9 +1,11 @@
 :root {
-  --black-sabbath: rgba(10, 10, 10, 1);
-  --gandalf-grey: rgba(30, 30, 30, 1);
+  --black-sabbath: rgba(8,9,10, 1);
+  --gandalf-grey: rgba(15, 14, 15, 1);
   --barry-white: rgba(225,232,235,1);
-  --deep-purple: rgba(121, 82, 179, 1);
-  --merlo-mustard: rgba(255, 193, 7, 1);
+  --deep-purple: #a862fd;
+  --merlo-mustard: rgba(255, 212, 0, 1);
+  --kaiser-ruby: rgba(219,22,47,1);
+  --unnatural-green: rgba(82,255,184, 1);
   --font-stroke-white: 0.25px var(--barry-white);
   --font-stroke-purple: 0.5px var(--deep-purple);
 } 
@@ -15,6 +17,20 @@
 body {
   background-color: var(--gandalf-grey);
   font-family: 'Roboto Mono', monospace;
+}
+body::-webkit-scrollbar{
+  width: 10px;
+}
+body::-webkit-scrollbar,
+body::-webkit-scrollbar-track {
+  background-color: var(--gandalf-grey);
+}
+body::-webkit-scrollbar-button {
+  display: none;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(82,255,184, .3);
+  border-radius: 10px;
 }
 .flex-column-center {
   display: flex;
