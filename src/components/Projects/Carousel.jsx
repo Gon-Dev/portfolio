@@ -2,8 +2,10 @@ import { useState } from 'react';
 import CarouselItem from './CarouselItem.jsx';
 import arrowNextIcon from '../../assets/symbols/arrow-next.svg'
 import arrowPrevIcon from '../../assets/symbols/arrow-prev.svg'
+import { useEffect } from 'react';
 function Carousel({ data }){
   const [currentSlide,setCurrentSlide] = useState(0);
+  
   const handleCarouselButtonClick = (event) => {
     event.currentTarget.classList.contains("button-next") && setCurrentSlide(currentSlide => currentSlide < data.length - 1 ? currentSlide + 1 : 0);
     event.currentTarget.classList.contains("button-prev") && setCurrentSlide(currentSlide => currentSlide !== 0 ? currentSlide - 1 : data.length - 1);
@@ -20,7 +22,7 @@ function Carousel({ data }){
         </button>
       </div>
 
-      <div className="carousel-inner flex-row-center" style={{transform: `translateX(${-currentSlide * 45}rem)`}}>
+      <div className="carousel-inner flex-row-center" style={{transform: `translateX(${-currentSlide * 70}rem)`}}>
         {data.map( item => 
           <CarouselItem 
             title={item.title} 
