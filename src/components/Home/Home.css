@@ -2,6 +2,7 @@
   height: 100vh;
   width: 100%;
   justify-content: flex-start;
+  overflow: hidden;
 }
 .know-me-wrapper{
   height: 100vh;
@@ -60,7 +61,6 @@
 .profile-title-greetings-last-name {
   font-size: 3.5rem;
 }
-.last-name { color: blue; }
 .profile-title-greetings-last-name,
 .profile-title-greetings-hey {
   color: transparent;
@@ -75,20 +75,19 @@
 .media-logos-wrapper { gap: 1rem;}
 .media-logo-wrapper {
   border: solid var(--merlo-mustard) 2px;
-  width: 50px;
-  height: 50px;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 5px;
-  background-color: rgba(225,232,235,.13);
+  /* background-color: rgba(225,232,235,.13); */
 }
 .media-logo-wrapper:active {
   transform: scale(90%);
 }
 .media-logo { 
-  width: 37px; 
-  height: 37px;
+  width: 70%; 
 }
 .tech-profile-developer { /*ver contraste: 2.91 !!!!*/
-  color: var(--deep-purple);
+  color: var(--unnatural-green);
   font-weight: 900;
 }
 .mail-wrapper-outer {
@@ -110,7 +109,7 @@
   color: var(--deep-purple);
 }
 .mail-line {
-  border: solid 1px var(--merlo-mustard);
+  border: solid 1px var(--unnatural-green);
   height: 1px;
   width: 125px;
   margin: 1rem 5rem 0 0;
@@ -119,6 +118,7 @@
   .home-wrapper {
     flex-direction: column;
     height: 100vh;
+    margin-top: -5vh;
   }
   .profile-avatar {
     width: 165px;
@@ -171,7 +171,6 @@
   .know-me-wrapper {
     position: absolute;
     left: 10px;
-    bottom: -3rem;
     width: 2rem;
   }
   .know-me-text {
@@ -180,7 +179,7 @@
   .mail-wrapper-outer {
     position: absolute;
     right: 20px;
-    bottom: 4em;
+    bottom: 12vh;
     width: 100%;
     height: 1rem;
   }
@@ -191,5 +190,11 @@
   .mail-line {
     margin-right: 0;
     border-top: none;
+  }
+}
+
+@media (max-width: 359px) {
+  .know-me-wrapper {
+    display: none;
   }
 }
